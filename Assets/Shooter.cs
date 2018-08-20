@@ -22,14 +22,13 @@ public class Shooter : MonoBehaviour
     public void Shot ()
     {
         //プレファブからBulletオブジェクトを生成
-        GameObject Bullet = (GameObject)Instantiate(
-        BulletPrefab,
-        transform.position,
-            Quaternion.identity
+        Quaternion rote = new Quaternion(0.0f, 90.0f, 90.0f, 1.0f);
+        GameObject Bullet = (GameObject)
+            Instantiate(BulletPrefab,transform.position,rote
         );
+        
         //BulletオブジェクトのRigidbodyを取得し力と回転を加える
         Rigidbody BulletRigidBody = Bullet.GetComponent<Rigidbody>();
         BulletRigidBody.AddForce(transform.forward * shotSpeed);
-
     }
 }
