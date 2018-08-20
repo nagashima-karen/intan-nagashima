@@ -16,7 +16,7 @@ public class Shooter : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        if (Input.GetMouseButton(0)) Shot();	
+        if (Input.GetMouseButtonDown(0)) Shot();	
 	}
 
     public void Shot ()
@@ -30,5 +30,6 @@ public class Shooter : MonoBehaviour
         //BulletオブジェクトのRigidbodyを取得し力と回転を加える
         Rigidbody BulletRigidBody = Bullet.GetComponent<Rigidbody>();
         BulletRigidBody.AddForce(transform.forward * shotSpeed);
+
     }
 }
