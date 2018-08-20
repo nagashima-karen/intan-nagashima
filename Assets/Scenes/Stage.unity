@@ -610,7 +610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 1480829394849236, guid: 60171fe990abe4d16a7c7f6c3c4fb52a,
     type: 2}
-  shotSpeed: 540
+  shotSpeed: 1000
   shotTorque: 0
 --- !u!1 &1721004245
 GameObject:
@@ -699,6 +699,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1808138173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100114, guid: 686a1bf419e051a409fc533794c2a7f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1831240365}
+--- !u!64 &1808138176
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1808138173}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 44efacea9a9a1394c9a977bd6dd3972c, type: 3}
 --- !u!1001 &1831240365
 Prefab:
   m_ObjectHideFlags: 0
@@ -708,7 +727,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400114, guid: 686a1bf419e051a409fc533794c2a7f2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 11.7
       objectReference: {fileID: 0}
     - target: {fileID: 400114, guid: 686a1bf419e051a409fc533794c2a7f2, type: 2}
       propertyPath: m_LocalPosition.y

@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4648249081637286}
   - component: {fileID: 205821561954950018}
   - component: {fileID: 54698837521621604}
+  - component: {fileID: 136578092038676148}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -444,6 +445,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &136578092038676148
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480829394849236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.007
+  m_Height: 0.03
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!205 &205821561954950018
 LODGroup:
   m_ObjectHideFlags: 1
