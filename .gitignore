@@ -13,3 +13,4 @@ Temp
 .DS_Store
 .metadata
 .ruby-version
+*.ide/
