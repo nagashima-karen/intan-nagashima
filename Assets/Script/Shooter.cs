@@ -10,13 +10,15 @@ public class Shooter : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        if (Input.GetMouseButtonDown(0)) Shot();	
+        if (Input.GetMouseButtonDown(0)) 
+            //Shotを0.5秒後に呼び出す
+            Invoke("Shot", 0.5f);
 	}
 
     public void Shot ()
