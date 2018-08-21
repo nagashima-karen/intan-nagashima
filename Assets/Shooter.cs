@@ -27,7 +27,7 @@ public class Shooter : MonoBehaviour
             Instantiate(BulletPrefab,transform.position,rote
         );
         
-        //BulletオブジェクトのRigidbodyを取得し力と回転を加える
+        //BulletオブジェクトのRigidbodyを取得し力をくわえる。
         Rigidbody BulletRigidBody = Bullet.GetComponent<Rigidbody>();
         BulletRigidBody.AddForce(transform.forward * shotSpeed);
     }
