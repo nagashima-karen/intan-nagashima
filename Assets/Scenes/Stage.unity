@@ -367,10 +367,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 110.259026, y: 160, z: 72.88709}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 992871128}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &459090492
 GameObject:
@@ -812,8 +811,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 459090493}
-  m_Father: {fileID: 428936786}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1034,13 +1033,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1458698203}
-  m_LocalRotation: {x: 0.08114505, y: -0, z: -0, w: 0.9967023}
-  m_LocalPosition: {x: 0, y: 18.2, z: -55.8}
+  m_LocalRotation: {x: 0.11301437, y: -0, z: -0, w: 0.99359334}
+  m_LocalPosition: {x: -2.86, y: 19.99, z: -55.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 9.309, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.978001, y: 0, z: 0}
 --- !u!1 &1631142610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1244390726855398, guid: 392a05bd229c33043ae112a856120172,
@@ -1231,6 +1230,10 @@ Prefab:
       objectReference: {fileID: 4300000, guid: 44efacea9a9a1394c9a977bd6dd3972c, type: 3}
     - target: {fileID: 100114, guid: 686a1bf419e051a409fc533794c2a7f2, type: 2}
       propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 100114, guid: 686a1bf419e051a409fc533794c2a7f2, type: 2}
+      propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
