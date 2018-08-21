@@ -327,7 +327,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.579, y: 1}
+  m_AnchorMax: {x: 0.349, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 768618723}
   - component: {fileID: 768618722}
   - component: {fileID: 768618721}
+  - component: {fileID: 768618725}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -546,6 +547,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &768618725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768618720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e038e86a585ea470eb2947e10e7f3af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 1000
+  EnemyATK: 10
 --- !u!1 &818948299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,6 +1075,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1808138173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100114, guid: 686a1bf419e051a409fc533794c2a7f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1831240365}
+--- !u!114 &1808138176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1808138173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e038e86a585ea470eb2947e10e7f3af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 1000
+  EnemyATK: 10
 --- !u!1001 &1831240365
 Prefab:
   m_ObjectHideFlags: 0
@@ -1221,6 +1253,7 @@ GameObject:
   - component: {fileID: 2012683284}
   - component: {fileID: 2012683283}
   - component: {fileID: 2012683282}
+  - component: {fileID: 2012683286}
   m_Layer: 0
   m_Name: Floor (1)
   m_TagString: Untagged
@@ -1297,6 +1330,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &2012683286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2012683281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e038e86a585ea470eb2947e10e7f3af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 0
+  EnemyATK: 10
 --- !u!1 &2040605335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,9 +1485,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 1000
   m_WholeNumbers: 0
-  m_Value: 0.579
+  m_Value: 349
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
