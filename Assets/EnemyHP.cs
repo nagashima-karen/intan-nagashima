@@ -20,10 +20,7 @@ public class EnemyHP : MonoBehaviour
 
     void Update()
     {
-        if (HP <= 0)
-        {
-            Debug.Log("死亡しました");
-        }
+
     }
 
     void OnTriggerEnter(Collider hit)
