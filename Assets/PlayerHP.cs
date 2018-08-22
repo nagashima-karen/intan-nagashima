@@ -38,5 +38,11 @@ public class PlayerHP : MonoBehaviour
 
         }
 
+
+    }
+    void OnParticleCollision(GameObject Player)
+    {
+        HP -= EnemyATK; //攻撃で体力が減少
+        Debug.Log("プレイヤーの残りHP" + HP);
     }
 }
