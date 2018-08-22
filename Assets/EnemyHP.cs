@@ -33,6 +33,8 @@ public class EnemyHP : MonoBehaviour
         {
 
             HP -= PlayerATK; //攻撃で体力が減少
+            Debug.Log("残りHP" + HP);
         }
+
     }
 }
