@@ -13,7 +13,7 @@ public class HPBarControl : MonoBehaviour
 
     void Start()
     {
-        hp = 100; // 最大HPの値
+        hp = 1000; // 最大HPの値
         hpslider.value = hp; //sliderのValueの値を最大HPにする
     }
 

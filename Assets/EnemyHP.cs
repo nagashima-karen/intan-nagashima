@@ -6,7 +6,7 @@ public class EnemyHP : MonoBehaviour
 {
 
 
-    public readonly int maxHP = 100;    //体力の最大値
+    public readonly int maxHP = 1000;    //体力の最大値
     public int HP;    //体力
     public int PlayerATK = 10;  //プレイヤーの攻撃力
 
