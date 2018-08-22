@@ -11,8 +11,9 @@ public class EnemyHP : MonoBehaviour
     public int HP;    //体力
     public int PlayerATK = 10;  //プレイヤーの攻撃力
     [SerializeField]
-     private Animator animator;
-
+    private Animator animator;
+    [SerializeField]
+    private ParticleSystem particle;
 
     void Start()
     {
@@ -22,11 +23,21 @@ public class EnemyHP : MonoBehaviour
 
     void Update()
     {
+        //引数0はLayerのdefault。
+        //上から順番の0,1,2,3.....のように割り当てられます。
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        if (stateInfo.nameHash == Animator.StringToHash("Base Layer.Flame Attack"))
+        {
+            particle.Play(); //パーティクルの再生 
+        }
+
         if (HP <= 0)
         {
             Debug.Log("倒しました");
             SceneManager.LoadScene("Clear");
         }
+
+
     }
 
     void OnTriggerEnter(Collider hit)
