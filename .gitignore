@@ -1,5 +1,6 @@
 Library
 Temp
+*.bat
 *.csproj
 *.csproj.user
 *.booproj
@@ -10,7 +11,7 @@ Temp
 *.unityproj
 *.userprefs
 *.userprefs.meta
+*~
 .DS_Store
-.metadata
-.ruby-version
-*.ide/
+*[! -~]*
+*.pidb.meta
