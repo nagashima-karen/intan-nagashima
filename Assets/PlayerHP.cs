@@ -9,7 +9,7 @@ public class PlayerHP : MonoBehaviour
     private readonly int maxHP = 2000;    //体力の最大値
     public int HP;    //体力
     [SerializeField]
-    private int EnemyATK = 25;  //ドラゴンの攻撃力
+    private int EnemyATK = 50;  //ドラゴンの攻撃力
 
     void Start()
     {
