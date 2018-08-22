@@ -26,7 +26,7 @@ public class EnemyHP : MonoBehaviour
         //引数0はLayerのdefault。
         //上から順番の0,1,2,3.....のように割り当てられます。
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        if (stateInfo.nameHash == Animator.StringToHash("Base Layer.Flame Attack"))
+        if (stateInfo.nameHash == Animator.StringToHash("Base Layer.Idle01 0 0 0 0"))
         {
             particle.Play(); //パーティクルの再生 
         }
