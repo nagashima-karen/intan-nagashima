@@ -9,7 +9,8 @@ public class EnemyHP : MonoBehaviour
     public readonly int maxHP = 1000;    //体力の最大値
     public int HP;    //体力
     public int PlayerATK = 10;  //プレイヤーの攻撃力
-
+    [SerializeField]
+     private Animator animator;
 
 
     void Start()
@@ -20,7 +21,11 @@ public class EnemyHP : MonoBehaviour
 
     void Update()
     {
+        if (HP <= 0)
+        {
+            Debug.Log("倒しました");
 
+        }
     }
 
     void OnTriggerEnter(Collider hit)
@@ -31,6 +36,7 @@ public class EnemyHP : MonoBehaviour
 
             HP -= PlayerATK; //攻撃で体力が減少
             Debug.Log("残りHP" + HP);
+            animator.SetTrigger("Get Hit");
         }
 
     }
