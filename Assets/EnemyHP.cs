@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHP : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class EnemyHP : MonoBehaviour
         if (HP <= 0)
         {
             Debug.Log("倒しました");
-
+            SceneManager.LoadScene("Clear");
         }
     }
 
