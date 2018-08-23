@@ -12,7 +12,7 @@ public class MoveGun : MonoBehaviour {
     {
         if (Input.GetKey("up"))
         {
-            if (transform.position.y >= 18.0f)
+            if (transform.position.y <= 18.0f)
                 return;
             transform.position += transform.up * speed * Time.deltaTime;
         }
@@ -24,10 +24,14 @@ public class MoveGun : MonoBehaviour {
         }
         if (Input.GetKey("right"))
         {
+            if (transform.position.x >= 15.0f)
+                return;
             transform.position += transform.right * speed * Time.deltaTime;
         }
         if (Input.GetKey("left"))
         {
+            if (transform.position.x <= -15.0f)
+                return;
             transform.position -= transform.right * speed * Time.deltaTime;
         }
     }
