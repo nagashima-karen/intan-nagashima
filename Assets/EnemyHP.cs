@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHP : MonoBehaviour
 {
-
-
-    public readonly int maxHP = 1000;    //体力の最大値
+    [SerializeField]
+    private readonly int maxHP = 1000;    //体力の最大値
     public int HP;    //体力
-    public int PlayerATK = 10;  //プレイヤーの攻撃力
+    [SerializeField]
+    private int PlayerATK = 10;  //プレイヤーの攻撃力
     [SerializeField]
     private Animator animator;
     [SerializeField]
@@ -36,13 +36,10 @@ public class EnemyHP : MonoBehaviour
             Debug.Log("倒しました");
             SceneManager.LoadScene("Clear");
         }
-
-
     }
 
     void OnTriggerEnter(Collider hit)
     {
-
         if (hit.CompareTag("Bullet"))
         {
 
@@ -50,6 +47,5 @@ public class EnemyHP : MonoBehaviour
             Debug.Log("残りHP" + HP);
             animator.SetTrigger("Get Hit");
         }
-
     }
 }

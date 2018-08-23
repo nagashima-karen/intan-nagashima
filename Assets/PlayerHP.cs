@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
-
-    [SerializeField]
     private readonly int maxHP = 2000;    //体力の最大値
     public int HP;    //体力
     [SerializeField]
@@ -18,28 +16,20 @@ public class PlayerHP : MonoBehaviour
     }
 
 
-    void Update()
-    {
-        if (HP <= 0)
-        {
-            Debug.Log("死亡しました");
-            SceneManager.LoadScene("GameOver");
-        }
-    }
-
     void OnTriggerEnter(Collider hit)
     {
-
         if (hit.CompareTag("Enemy"))
         {
-
             HP -= EnemyATK; //攻撃で体力が減少
             Debug.Log("プレイヤーの残りHP" + HP);
-
+            if (HP <= 0)
+            {
+                Debug.Log("死亡しました");
+                SceneManager.LoadScene("GameOver");
+            }
         }
-
-
     }
+
     void OnParticleCollision(GameObject Player)
     {
         HP -= EnemyATK; //攻撃で体力が減少

@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour 
 {
-    public GameObject BulletPrefab;
+    [SerializeField]
+    private GameObject BulletPrefab = null;
     public float shotSpeed;
-    public float shotTorque;
-
-	// Use this for initialization
-	void Start () {
-        
-	}
 	
 	// Update is called once per frame
 	void Update () 

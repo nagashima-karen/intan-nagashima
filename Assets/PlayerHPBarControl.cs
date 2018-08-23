@@ -9,18 +9,17 @@ public class PlayerHPBarControl : MonoBehaviour
     private PlayerHP hpcomp = null;
     [SerializeField]
     private Slider hpslider;
+    [SerializeField]
     private int hp;
 
     void Start()
     {
-        hp = 2000; // 最大HPの値
         hpslider.value = hp; //sliderのValueの値を最大HPにする
     }
 
-
     void Update()
     {
-        int PlHP = hpcomp.HP; //PlayerHP内の変数HPをPlHPとして使用
-        hpslider.value = PlHP; //Valueの値をPlHPの値にする
+        int PlayerHP = hpcomp.HP; //PlayerHP内の変数HPをPlayerHPとして使用
+        hpslider.value = PlayerHP; //Valueの値をPlayerHPの値にする
     }
 }
