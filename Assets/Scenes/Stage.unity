@@ -365,7 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpcomp: {fileID: 1808138176}
   hpslider: {fileID: 459090494}
-  hp: 1000
+  hp: 3000
 --- !u!4 &428936786
 Transform:
   m_ObjectHideFlags: 0
@@ -455,9 +455,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1000
+  m_MaxValue: 3000
   m_WholeNumbers: 0
-  m_Value: 1000
+  m_Value: 3000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10008,7 +10008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpcomp: {fileID: 1631142614}
   hpslider: {fileID: 996857860}
-  hp: 2000
+  hp: 6000
 --- !u!4 &722107822
 Transform:
   m_ObjectHideFlags: 0
@@ -10427,9 +10427,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 2000
+  m_MaxValue: 6000
   m_WholeNumbers: 0
-  m_Value: 2000
+  m_Value: 6000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10719,7 +10719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7feaab5c05d497997117cbaea03ce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 2000
+  HP: 6000
   EnemyATK: 50
 --- !u!65 &1631142615
 BoxCollider:
@@ -10962,7 +10962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49441a81c1c745cf8f13ae846be7b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 1000
+  HP: 3000
   PlayerATK: 10
   animator: {fileID: 1808138174}
   particle: {fileID: 626489131}

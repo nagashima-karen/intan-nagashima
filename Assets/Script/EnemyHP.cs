@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnemyHP : MonoBehaviour
 {
     [SerializeField]
-    private readonly int maxHP = 1000;    //体力の最大値
+    private readonly int maxHP = 3000;    //体力の最大値
     public int HP;    //体力
     [SerializeField]
     private int PlayerATK = 10;  //プレイヤーの攻撃力
