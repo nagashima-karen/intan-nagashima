@@ -9,7 +9,7 @@ public class EnemyHP : MonoBehaviour
     private readonly int maxHP = 3000;    //体力の最大値
     public int HP;    //体力
     [SerializeField]
-    private int PlayerATK = 10;  //プレイヤーの攻撃力
+    private int PlayerATK = 1;  //プレイヤーの攻撃力
     [SerializeField]
     private Animator animator;
     [SerializeField]
