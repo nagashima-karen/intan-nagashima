@@ -42,10 +42,11 @@ public class EnemyHP : MonoBehaviour
     {
         if (hit.CompareTag("Bullet"))
         {
-
             HP -= PlayerATK; //攻撃で体力が減少
             Debug.Log("残りHP" + HP);
             animator.SetTrigger("Get Hit");
         }
     }
+
+   
 }

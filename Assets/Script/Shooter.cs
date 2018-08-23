@@ -6,7 +6,8 @@ public class Shooter : MonoBehaviour
 {
     [SerializeField]
     private GameObject BulletPrefab = null;
-    public float shotSpeed;
+    [SerializeField]
+    private float shotSpeed;
 	
 	// Update is called once per frame
 	void Update () 

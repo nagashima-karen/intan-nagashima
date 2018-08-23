@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveGun : MonoBehaviour {
-
-    public float speed = 3.0f;
+    
+    [SerializeField]
+    private float speed = 10.0f;
 
     // Update is called once per frame
     void Update()

@@ -593,11 +593,10 @@ GameObject:
   m_Component:
   - component: {fileID: 626489128}
   - component: {fileID: 626489131}
-  - component: {fileID: 626489130}
   - component: {fileID: 626489129}
   m_Layer: 0
   m_Name: ParticleSystem
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -673,17 +672,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &626489130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 626489127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e57cb6d36f3b4308ba089c333031721, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!198 &626489131
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -5298,7 +5286,7 @@ GameObject:
   - component: {fileID: 672487000}
   m_Layer: 0
   m_Name: Particle System (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8773,9 +8761,9 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
-    type: 0
+    type: 1
     collisionMode: 0
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
@@ -8955,7 +8943,7 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -10130,7 +10118,6 @@ GameObject:
   - component: {fileID: 818948302}
   - component: {fileID: 818948301}
   - component: {fileID: 818948300}
-  - component: {fileID: 818948304}
   m_Layer: 0
   m_Name: WallLeft2
   m_TagString: Untagged
@@ -10207,17 +10194,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 90}
---- !u!114 &818948304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 818948299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db2f2b7f749f9411ca393c9cadeb946a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &946180345
 Prefab:
   m_ObjectHideFlags: 0
@@ -10239,19 +10215,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4021266016307886, guid: 392a05bd229c33043ae112a856120172, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4021266016307886, guid: 392a05bd229c33043ae112a856120172, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.1516118
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4021266016307886, guid: 392a05bd229c33043ae112a856120172, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4021266016307886, guid: 392a05bd229c33043ae112a856120172, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.98844016
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4021266016307886, guid: 392a05bd229c33043ae112a856120172, type: 2}
       propertyPath: m_RootOrder
@@ -10271,7 +10247,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4021266016307886, guid: 392a05bd229c33043ae112a856120172, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -17.441
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1244390726855398, guid: 392a05bd229c33043ae112a856120172, type: 2}
       propertyPath: m_Name
@@ -10755,8 +10731,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.4}
-  m_Center: {x: -0.3, y: 0.02, z: 0}
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: -0.3, y: 0.02, z: -0}
 --- !u!54 &1631142616
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10783,7 +10759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb070d32efd94af791f0f84cc7bc5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 10
 --- !u!1 &1641295606
 GameObject:
   m_ObjectHideFlags: 0
@@ -11322,7 +11298,6 @@ GameObject:
   - component: {fileID: 2012683284}
   - component: {fileID: 2012683283}
   - component: {fileID: 2012683282}
-  - component: {fileID: 2012683286}
   m_Layer: 0
   m_Name: Floor (1)
   m_TagString: Untagged
@@ -11399,17 +11374,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &2012683286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2012683281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e038e86a585ea470eb2947e10e7f3af1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2022684949
 GameObject:
   m_ObjectHideFlags: 0
@@ -11421,6 +11385,7 @@ GameObject:
   - component: {fileID: 2022684953}
   - component: {fileID: 2022684952}
   - component: {fileID: 2022684951}
+  - component: {fileID: 2022684954}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Enemy
@@ -11452,8 +11417,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 308.80658, y: 166.63335, z: 100}
-  m_Center: {x: -368.3825, y: -33.315186, z: -0.000035845165}
+  m_Size: {x: 337.76892, y: 166.63335, z: 100}
+  m_Center: {x: -382.8623, y: -33.31516, z: -0.000037056325}
 --- !u!23 &2022684952
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11496,6 +11461,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2022684949}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2022684954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2022684949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f1485e5be4d45f2a56f984387dacfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHP: {fileID: 1808138176}
+  damage: 200
 --- !u!1 &2040605335
 GameObject:
   m_ObjectHideFlags: 0
