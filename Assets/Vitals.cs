@@ -8,7 +8,7 @@ public class Vitals : MonoBehaviour
     [SerializeField]
     private EnemyHP enemyHP;
     [SerializeField]
-    private int damage = 200;  //プレイヤーの攻撃力
+    private int damage;  //プレイヤーの攻撃力
  
     void OnTriggerEnter(Collider hit)
     {
