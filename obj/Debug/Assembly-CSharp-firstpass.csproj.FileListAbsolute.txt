@@ -1,8 +1,5 @@
-/Users/nagashima-karen/IntanProject/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
-/Users/nagashima-karen/IntanProject/obj/Debug/Assembly-CSharp.dll
-/Users/nagashima-karen/IntanProject/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache
-/Users/nagashima-karen/IntanProject/Temp/bin/Debug/Assembly-CSharp.dll
-/Users/nagashima-karen/IntanProject/Temp/bin/Debug/Assembly-CSharp.pdb
+/Users/nagashima-karen/IntanProject/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/nagashima-karen/IntanProject/Temp/bin/Debug/Assembly-CSharp-firstpass.pdb
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/Boo.Lang.dll
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/mscorlib.dll
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/System.Core.dll
@@ -102,7 +99,6 @@
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/Unity.Cecil.Pdb.dll
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/Unity.Cecil.Mdb.dll
-/Users/nagashima-karen/IntanProject/Temp/bin/Debug/Assembly-CSharp-firstpass.pdb
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/UnityEngine.dll.mdb
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/UnityEngine.xml
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/UnityEditor.dll.mdb
@@ -248,4 +244,7 @@
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/UnityEngine.ParticlesLegacyModule.xml
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
 /Users/nagashima-karen/IntanProject/Temp/bin/Debug/Unity.IvyParser.dll.mdb
-/Users/nagashima-karen/IntanProject/obj/Debug/Assembly-CSharp.pdb
+/Users/nagashima-karen/IntanProject/obj/Debug/Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+/Users/nagashima-karen/IntanProject/obj/Debug/Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache
+/Users/nagashima-karen/IntanProject/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/nagashima-karen/IntanProject/obj/Debug/Assembly-CSharp-firstpass.pdb

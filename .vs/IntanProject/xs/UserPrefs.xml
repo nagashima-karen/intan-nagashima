@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{E1C01562-89FF-1103-4BA6-AB8C11857B71}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/PlayerHPBarControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ButtonControler.cs">
     <Files>
       <File FileName="Assets/Script/Shooter.cs" Line="24" Column="9" />
       <File FileName="Assets/Script/EnemyHP.cs" Line="18" Column="4" />
       <File FileName="Assets/Script/BulletDestroyer.cs" Line="6" Column="2" />
       <File FileName="Assets/Script/HPBarControl.cs" Line="9" Column="20" />
-      <File FileName="Assets/Script/PlayerHP.cs" Line="17" Column="5" />
-      <File FileName="Assets/Script/PlayerHPBarControl.cs" Line="8" Column="5" />
-      <File FileName="Assets/Script/MoveGun.cs" Line="9" Column="5" />
+      <File FileName="Assets/Script/PlayerHP.cs" Line="17" Column="1" />
+      <File FileName="Assets/Script/PlayerHPBarControl.cs" Line="11" Column="12" />
+      <File FileName="Assets/Script/MoveGun.cs" Line="18" Column="10" />
+      <File FileName="Assets/ButtonControler.cs" Line="102" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
