@@ -9,13 +9,11 @@ public class Shooter : MonoBehaviour
     [SerializeField]
     private float shotSpeed;
 	
-	// Update is called once per frame
-	void Update () 
+    public void OnClick()
     {
-        if (Input.GetMouseButtonDown(0)) 
-            //Shotを0.5秒後に呼び出す
-            Invoke("Shot", 0.5f);
-	}
+        Debug.Log("弾を発射!");
+        Invoke("Shot", 0.5f);
+    }
 
     public void Shot ()
     {
